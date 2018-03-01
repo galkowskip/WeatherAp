@@ -2,5 +2,9 @@ body {
     background-color: skyblue;
 }
 .content {
-    
+    display: flex;
+    width: 90vw;
+    margin-right:5vw;
+    margin-left: 5vw;
+    justify-content: center;
 }
