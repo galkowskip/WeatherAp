@@ -1,0 +1,28 @@
+body {
+    background-color: skyblue;
+}
+li {
+    list-style: none;
+    align-content: center;
+}
+.input {
+    font-size: 5vh;
+    resize: none;
+    min-height: 10vh;
+    margin-right: 2vw;
+    height: 10vh;
+    width: 40vw;
+}
+.content {
+    margin-top: 50%;
+    display: inline-flex;
+    width: 90vw;
+    margin-right:5vw;
+    margin-left: 5vw;
+    justify-content: center;
+}
+.btnInput {
+    width: 10vw;
+    height: 10vh;
+    float: right;
+}
