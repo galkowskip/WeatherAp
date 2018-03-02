@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const port = process.env.port || 3000
 const localize = require('./localize.js')
+const path = require('path')
 
 app.get('/', (req, res) => {
     console.log('1')
