@@ -18,7 +18,7 @@ module.exports = function readJSON(data, callback) {
     }
     function daily() {
             for(var i = 0; i < obj.daily.data.length; i++) {
-                console.log(i)
+                //console.log(i)
                 res.week[i] = {
                     summary: obj.daily.data[i].summary,
                     icon: obj.daily.data[i].icon,
@@ -30,6 +30,8 @@ module.exports = function readJSON(data, callback) {
                 } 
             }
         }
-    daily()
-    callback(res)
+        daily()
+        //console.log(res)
+    
+    return res;
 }
