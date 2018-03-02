@@ -3,16 +3,22 @@ function viewInput() {
     html = jQuery.parseHTML(html)
     $('.content').append(html)
 }
-function clear() {
-    $('.content').empty()
-}
+
 function viewWeather() {
 
 }
 $(document).ready(() => {
     viewInput()
-    $('.content').on('click', 'button', () => {
-        clear() 
+    $('.content').on('click', 'button', (event) => {
+        event.preventDefault()
+        var userInput = $('form').serializeArray()
+        $.get("/weather", userInput,
+            (data) => {
+                console.log(data)
+            }
+        );
+        //$('.content').empty()
+        
 
     })
 

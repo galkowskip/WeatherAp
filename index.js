@@ -2,15 +2,14 @@ const express = require('express')
 const app = express()
 const port = process.env.port || 3000
 const localize = require('./localize.js')
-//Keys
-
-localize.findUser()
-
-app.use(express.static('/static'))
 
 app.get('/', (req, res) => {
-    app.use(express.static('/static'))
-     
+    console.log('1')
+    app.use(express.static('client'))
+})
+
+app.get('/weather', (req, res) => {
+    localize.weatherChecker(localize.findUser(req.query.userInput))
 })
 
 app.listen(port, () => {
