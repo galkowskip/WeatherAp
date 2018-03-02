@@ -1,5 +1,7 @@
 const key = require('./key.js')
 const request = require('request')
+const fs = require('fs')
+const readJSON = require('./readJSON')
 const maps = require('@google/maps').createClient({
     key: key.google,
 })
@@ -20,13 +22,15 @@ module.exports = localize = {
 
             console.log('Weather checking')
 
-            var url = 'https://api.darksky.net/forecast/' + key.sky + '/' + pos.lat + ',' + pos.lng
+            var url = 'https://api.darksky.net/forecast/' + key.sky + '/' + pos.lat + ',' + pos.lng + '?exclude=hourly,minutely&units=si'
             console.log(url)
             request({
                 url: url,
             }, function (err, res, body) {
                 if (!err && res.statusCode == 200) {
-                    console.log(body);
+                    readJSON(body, (data) => {
+                        console.log(data)
+                    });
                 } else {
                     console.log('fukup')
                 }

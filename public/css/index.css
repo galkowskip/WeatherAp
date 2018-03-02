@@ -8,9 +8,8 @@ li {
 .input {
     font-size: 5vh;
     resize: none;
-    min-height: 10vh;
     margin-right: 2vw;
-    height: 10vh;
+    height: 9vh;
     width: 40vw;
 }
 .content {
