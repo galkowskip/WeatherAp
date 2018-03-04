@@ -8,7 +8,7 @@ app.listen(process.env.PORT || 3000, function () {
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 
     app.get('/', (req, res) => {
-        app.use(express.static('client'))
+        app.use(express.static('client'))       
     })
     
     app.get('/weather', (req, res) => {
