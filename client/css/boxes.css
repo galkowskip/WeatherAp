@@ -1,0 +1,11 @@
+.wbox {
+    margin: 10px;
+    background-color: lightcyan;
+    min-width:100px;
+    width: 20vw;
+    margin:15px;
+    
+}
+.ico {
+    height: 30px;
+}

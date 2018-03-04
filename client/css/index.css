@@ -1,5 +1,5 @@
 body {
-    background-color: skyblue;
+    background-color: rgb(181, 234, 255);
 }
 li {
     list-style: none;
@@ -12,16 +12,24 @@ li {
     height: 9vh;
     width: 40vw;
 }
-.content {
-    margin-top:40vh;
-    display: inline-flex;
-    width: 90vw;
-    margin-right:5vw;
-    margin-left: 5vw;
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
 }
 .btnInput {
     width: 10vw;
     height: 10vh;
     float: right;
+}
+form {
+    margin: 50px;
+}
+.boxInput {
+    margin-top:40vh;
+    display: inline-flex;
+    width: 90vw;
+    background-color: lightsteelblue;
+    border-radius: 20px;
 }
