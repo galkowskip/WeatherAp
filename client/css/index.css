@@ -9,6 +9,7 @@ li {
     margin-right: 2vw;
     height: 9vh;
     width: 40vw;
+    min-height: 65px;
 }
 #content {
     display: flex;
@@ -18,6 +19,7 @@ li {
 }
 form {
     margin: 50px;
+    min-height: 100px;
 }
 .boxInput {
     margin-top:30vh;

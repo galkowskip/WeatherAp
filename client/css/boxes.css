@@ -34,6 +34,12 @@
         display: inline;
     }
 }
+
+@media(max-height: 600px) {
+    #content {
+        margin-top: 20px;
+    }
+}
 .ico {
     height: 30px;
 }
@@ -49,6 +55,7 @@
         min-width: 120px;
         width: 15vw;
         height: 10vh;
+        min-height: 65px;
         float: right;
 }
   .btnInput:hover {
