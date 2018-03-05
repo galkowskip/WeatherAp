@@ -1,12 +1,10 @@
-body {
-    background-color: rgb(181, 234, 255);
-}
+
 li {
     list-style: none;
     align-content: center;
 }
 .input {
-    font-size: 5vh;
+    font-size: 5vw;
     resize: none;
     margin-right: 2vw;
     height: 9vh;
@@ -27,9 +25,14 @@ form {
     margin: 50px;
 }
 .boxInput {
-    margin-top:40vh;
+    margin-top:30vh;
     display: inline-flex;
     width: 90vw;
-    background-color: lightsteelblue;
-    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+a {
+    color: whitesmoke;
+    position: absolute;
+    bottom: 5px;
 }

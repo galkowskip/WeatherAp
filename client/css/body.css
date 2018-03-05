@@ -1,0 +1,17 @@
+body {
+    min-height: 100%;
+    margin:0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgba(214,235,240,1);
+    background: -moz-linear-gradient(top, rgba(214,235,240,1) 0%, rgba(73,165,191,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(214,235,240,1)), color-stop(100%, rgba(73,165,191,1)));
+    background: -webkit-linear-gradient(top, rgba(214,235,240,1) 0%, rgba(73,165,191,1) 100%);
+    background: -o-linear-gradient(top, rgba(214,235,240,1) 0%, rgba(73,165,191,1) 100%);
+    background: -ms-linear-gradient(top, rgba(214,235,240,1) 0%, rgba(73,165,191,1) 100%);
+    background: linear-gradient(to bottom, rgba(214,235,240,1) 0%, rgba(73,165,191,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6ebf0', endColorstr='#49a5bf', GradientType=0 );
+}
+html {
+    min-height: 100%;
+}

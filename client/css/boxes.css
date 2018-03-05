@@ -1,10 +1,28 @@
 .wbox {
     margin: 10px;
-    background-color: lightcyan;
+    border-left-style: solid;
+    border-left-width: 3px;
+    background-color: whitesmoke;
     min-width:200px;
     width: 20vw;
     margin:15px;
-    
+    padding-left:5px;
+}
+.summary {
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+.temperatureHigh {
+    font-weight: bolder;
+}
+.temperatureLow {
+    font-weight: bold;
+}
+@media(max-width: 500px) {
+    .wbox {
+        width: 90%;
+        margin-bottom: 0px;
+    }
 }
 .ico {
     height: 30px;

@@ -1,5 +1,3 @@
-const fs = require('fs')
-
 module.exports = function readJSON(data, callback) {
 
     const obj = JSON.parse(data)
@@ -22,8 +20,8 @@ module.exports = function readJSON(data, callback) {
                 res.week[i] = {
                     summary: obj.daily.data[i].summary,
                     icon: obj.daily.data[i].icon,
-                    temperatureHigh: obj.daily.data[i].temperatureHigh,
-                    temperatureLow: obj.daily.data[i].temperatureLow,
+                    temperatureHigh: Math.round(obj.daily.data[i].temperatureHigh),
+                    temperatureLow:  Math.round(obj.daily.data[i].temperatureLow),
                     pressure: obj.daily.data[i].pressure,
                     windSpeed: obj.daily.data[i].windSpeed,
                     windBearing: obj.daily.data[i].windSpeed,
