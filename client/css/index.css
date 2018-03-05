@@ -16,11 +16,6 @@ li {
     width: 100%;
     justify-content: center;
 }
-.btnInput {
-    width: 10vw;
-    height: 10vh;
-    float: right;
-}
 form {
     margin: 50px;
 }
