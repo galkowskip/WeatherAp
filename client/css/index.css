@@ -4,7 +4,7 @@ li {
     align-content: center;
 }
 .input {
-    font-size: 5vw;
+    font-size: 200%;
     resize: none;
     margin-right: 2vw;
     height: 9vh;

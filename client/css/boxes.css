@@ -23,6 +23,16 @@
         width: 90%;
         margin-bottom: 0px;
     }
+    #content {
+        padding: 0px;
+        justify-content: flex-start;
+    }
+    .form {
+        margin-left: 10px;
+        margin-right:0px;
+        justify-content: flex;
+        display: inline;
+    }
 }
 .ico {
     height: 30px;
